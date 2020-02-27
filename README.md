@@ -54,12 +54,13 @@ In the component_templates folder, we have a sample artist's portfolio applicati
     {{ template "header" }}
 
     {{ template "jumbotron" }}
-    <div class="container">
-        ...cards showing work etc...
-    </div>
+    
+        <div class="container">
+            ...cards showing work etc...
+        </div>
 
     {{ template "footer"}}
-    {{ end }}
+{{ end }}
 ```
 
 To see the site running, cd into the directory and type

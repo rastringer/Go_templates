@@ -15,15 +15,24 @@ func displayHome(w http.ResponseWriter, r *http.Request) {
 }
 
 func displayAbout(w http.ResponseWriter, r *http.Request) {
-	t.ExecuteTemplate(w, "about", nil)
+	err := t.ExecuteTemplate(w, "about", nil)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }
 
 func displayWorks(w http.ResponseWriter, r *http.Request) {
-	t.ExecuteTemplate(w, "works", nil)
+	err := t.ExecuteTemplate(w, "works", nil)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }
 
 func displayContact(w http.ResponseWriter, r *http.Request) {
-	t.ExecuteTemplate(w, "contact", nil)
+	err := t.ExecuteTemplate(w, "contact", nil)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+	}
 }
 
 func main() {
