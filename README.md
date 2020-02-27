@@ -6,7 +6,8 @@ Templates are a powerful force for websites, e-mails, and can run functions as w
 
 The 'single_template' example shows an approach suited to single-page apps, where the screen may remain the same while inputs (displayed information) change. A suitable example may be a recipes site where each screen is a photo of the dish, and list of ingredients followed by instructions. This sample project displays Musketeers' names, and one of their best quotes (from countless contenders). 
 
-[example.png](single_template/example.png)
+
+<img src="single_template/example.png" />
 
 Here the only HTML we need is in base.html (abridged to remove the usual boilerplate and bootstrap import):
 
@@ -39,7 +40,8 @@ go run main.go
 ```
 then navigate to localhost:3000 in a browser. In this fashion, with the help of a database connection, we could in theory run thousands of unique screens/routes from just one HTML template.
 
-[example.png](component_templates/example.png)
+
+<img src="component_templates/example.png" />
 
 For applications with a more complex array or screens, a component-based template architecture may be more suitable. We can create different .html files for the header, footer, a carousel, anything else necessary, and slot them together like Lego blocks. 
 
